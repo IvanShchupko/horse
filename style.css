@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
   text-decoration: none;
 }
 
-/* https://www.figma.com/file/uTqR0lHE5h000d3wKIE2jm/horseClub?type=design&node-id=758-33&mode=design&t=Oea1DcV60PNhoXFK-0 */
+/* https://www.figma.com/file/uTqR0lHE5h000d3wKIE2jm/horseClub?node-id=657%3A264&mode=dev */
 .fullscreen {
   background-image: url(./image/background.png);
   background-size: cover;
@@ -31,7 +32,7 @@
   left: 0;
   bottom: 120px;
   width: 130px;
-  animation: lbush 2s linear infinite alternate;
+  animation: lbush 5s linear infinite alternate;
 }
 @keyframes lbush {
   0% {
@@ -81,6 +82,11 @@
   font-size: 14px;
   letter-spacing: 2px;
   margin-left: 20px;
+  transition: 0.5s;
+}
+.header__link:hover {
+  cursor: pointer;
+  font-size: 18px;
 }
 .header__link:nth-child(1) {
   border-bottom: 2px solid #218321;
@@ -161,10 +167,10 @@
 .section-about {
   width: 990px;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 .section-about__title {
   text-align: center;
+  font-family: "Philosopher", sans-serif;
 }
 .section-about__block {
   display: flex;
@@ -187,4 +193,145 @@
   letter-spacing: 0em;
   text-align: left;
   color: #008139;
+}
+.section-about__inside-txt {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.section-about__text {
+  color: #7E7E7E;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px 0 0 30px;
+}
+
+.main__title2 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main__title3 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.section2 {
+  display: flex;
+  width: 990px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.section2__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section2__block-img {
+  width: 80px;
+  height: 81px;
+}
+.section2__block-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  margin-top: 5px;
+}
+.section2__block-txt {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-top: 3px;
+  color: #7E7E7E;
+  text-align: center;
+}
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 160px;
+  margin: 50px auto;
+  background-image: url(./image/Небо\ 1.png);
+  background-size: cover;
+}
+.section3__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: -moz-min-content;
+  height: min-content;
+  border-radius: 5px;
+  box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.07);
+  margin: 50px auto;
+  padding: 0px 30px;
+  background-color: #ffffff;
+}
+.section3__block:nth-child(5) {
+  transform: translateY(50px);
+  margin-bottom: 400px;
+}
+.section3__block-img {
+  transform: translateY(-50px);
+}
+.section3__block-title {
+  color: #363434;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  transform: translateY(-30px);
+}
+.section3__block-line {
+  width: 30px;
+  height: 1px;
+  background-color: #008139;
+  margin: 25px 0;
+  transform: translateY(-30px);
+}
+.section3__block-txt {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #7E7E7E;
+  transform: translateY(-30px);
+}
+.section3__btn {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 17px 70px;
+  background: linear-gradient(to bottom right, #fbff01, #b7c40c);
+  border-radius: 5px;
+  position: absolute;
+  transform: translateY(900px) translateX(455px);
+}
+.section3__girl-hourse {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  z-index: 3;
+}
+.section3__boy-hourse {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.section3__sky {
+  position: absolute;
+  width: 100%;
+  transform: translateY(67pc);
+  left: 0;
 }/*# sourceMappingURL=style.css.map */
